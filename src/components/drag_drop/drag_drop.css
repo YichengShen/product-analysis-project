@@ -1,0 +1,35 @@
+.drag-drop-section {
+    background-color: rgb(199, 241, 255);
+    padding: 5vh 1vh 5vh;
+}
+
+.drop-area {
+    background-color: white;
+    border: 5px;
+    border-radius: 8px;
+    height: 20vh;
+    color: lightgrey;
+}
+@media only screen and (max-width: 1024px) {
+    .drop-area {
+        height: 8vh;
+    }
+}
+
+.drag-prompt {
+    pointer-events: none;
+}
+
+.drag-over {
+    border: dashed 3px rgb(245, 193, 79);
+}
+
+.btn-custom {
+    height: 33px;
+    width: 20%;
+    margin-top: 15px;
+}
+.btn-custom:hover {
+    color: white;
+}
+
