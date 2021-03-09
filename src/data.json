@@ -1,0 +1,20 @@
+{
+    "tensorflow":{
+        "General Information":{
+            "Name": "TensorFlow",
+            "Developer": "Google"
+        }
+    },
+    "pytorch":{
+        "General Information":{
+            "Name": "PyTorch",
+            "Developer": "Facebook"
+        }
+    },
+    "mxnet":{
+        "General Information":{
+            "Name": "MXNet",
+            "Developer": "Apache Software Foundation"
+        }
+    }
+}
