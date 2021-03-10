@@ -1,26 +1,27 @@
 // bootstrap styles
 import 'bootstrap/dist/css/bootstrap.min.css';
-// const bootstrap = require('bootstrap')
+// const bootstrap = require('bootstrap');
 
 const _ = require('lodash');
 
 // html
-import './index.html'
+import './index.html';
 
-// json
-import data from './data.json';
+// css
+import './custom.css'
 
 // js modules
-import renderIconHeader from './components/icon_header/icon_header.js'
-import renderDragDropArea, {addDragDrop} from './components/drag_drop/drag_drop.js'
+import renderIconHeader from './components/icon_header/icon_header.js';
+import renderDragDropArea, {addDragDrop} from './components/drag_drop/drag_drop.js';
 
-renderMainPage(data);
+renderMainPage();
 
-function renderMainPage(data) {
+function renderMainPage() {
     document.body.innerHTML = `
 
         ${renderIconHeader()}
         ${renderDragDropArea()}
+        <section id="content"></section>
 
     `;
     addDragDrop();

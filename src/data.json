@@ -1,20 +1,44 @@
 {
     "tensorflow":{
-        "General Information":{
-            "Name": "TensorFlow",
-            "Developer": "Google"
-        }
+        "geninfo": {
+            "name": "TensorFlow",
+            "developer": "<a href=\"https://about.google/\" class=\"center-underline\" target=\"_blank\">Google</a>"
+        },
+        "lang": [
+            "Python",
+            "C++",
+            "Java",
+            "Go",
+            "Javascript"
+        ]
     },
     "pytorch":{
-        "General Information":{
-            "Name": "PyTorch",
-            "Developer": "Facebook"
-        }
+        "geninfo":{
+            "name": "PyTorch",
+            "developer": "<a href=\"https://about.fb.com/company-info/\" class=\"center-underline\" target=\"_blank\">Facebook</a>"
+        },
+        "lang": [
+            "Python",
+            "C++",
+            "CUDA"
+        ]
     },
     "mxnet":{
-        "General Information":{
-            "Name": "MXNet",
-            "Developer": "Apache Software Foundation"
-        }
+        "geninfo":{
+            "name": "MXNet",
+            "developer": "<a href=\"https://www.apache.org/foundation/\" class=\"center-underline\" target=\"_blank\">Apache Software Foundation</a>"
+        },
+        "lang": [
+            "Python",
+            "C++",
+            "Java",
+            "Go",
+            "Javascript",
+            "R",
+            "Scala",
+            "Julia",
+            "Perl",
+            "Clojure"
+        ]
     }
 }

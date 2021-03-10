@@ -3,6 +3,13 @@
     padding: 5vh 1vh 5vh;
 }
 
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .drop-area {
     background-color: white;
     border: 5px;
@@ -24,12 +31,13 @@
     border: dashed 3px rgb(245, 193, 79);
 }
 
-.btn-custom {
-    height: 33px;
-    width: 20%;
+.reset {
+    text-decoration: underline !important;
+    color: rgb(145, 145, 145);
     margin-top: 15px;
 }
-.btn-custom:hover {
-    color: white;
+.reset:hover {
+    text-decoration: none !important;
+    color: #4266f7;
 }
 

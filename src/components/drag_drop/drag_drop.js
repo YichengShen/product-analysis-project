@@ -1,10 +1,11 @@
 // custom styles
 import './drag_drop.css'
 
+import renderContent from '../product_content/product_content.js';
 
 export default function renderDragDropArea() {
     return `
-    <div class="drag-drop-section">
+    <div class="drag-drop-section position-sticky sticky-header">
 
     <div class="container">
         <div class="row">
@@ -23,9 +24,9 @@ export default function renderDragDropArea() {
 
 function renderDropArea() {
     return _.range(1, 4).map(id => `
-        <div class="col" id="product-${id}">
+        <div class="col">
             <h6 class="text-center">Product ${id}</h6>
-            <div class="d-flex justify-content-center align-items-center drop-area">
+            <div id="product-${id}" class="d-flex justify-content-center align-items-center drop-area">
                 ${renderDragPrompt()}
             </div>
         </div>
@@ -92,16 +93,16 @@ function drop(e) {
     e.target.innerHTML = '';
     e.target.appendChild(draggable);
 
-    draggable.setAttribute('draggable', false)
+    draggable.setAttribute('draggable', false);
 
-    renderReset()
+    renderReset();
+
+    renderContent();
 }
 
 function renderReset() {
     const buttonDiv = document.querySelector("#reset-button") 
     buttonDiv.innerHTML = `
-        <button type="button" onclick="location.reload()" class="btn btn-outline-info btn-custom">
-            Reset
-        </button>
+        <a href="" class="reset center-underline">Reset</a>
     `
 }

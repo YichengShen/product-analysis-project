@@ -1,0 +1,32 @@
+/* Underline From Center */
+.center-underline {
+    color: #4266f7;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.center-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #79e4f7;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.center-underline:hover:before, .center-underline:focus:before, .center-underline:active:before {
+    left: 0;
+    right: 0;
+}
