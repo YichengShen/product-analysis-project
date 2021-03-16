@@ -3,6 +3,12 @@ import data from '../../data.json';
 
 import renderGeneralInfo from '../gen_info/gen_info.js';
 import renderLang from '../lang/lang.js';
+import renderCode from '../code/code.js';
+import renderDoc from '../doc/doc.js';
+import renderUser from '../user/u.js';
+import renderCommuinity from '../community/community.js';
+import renderTutor from '../tutorial/tutorial.js';
+import renderDistributed from '../distributed/distributed.js';
 
 export default function renderContent() {
     const [one, two, three] = getProductOrder();
@@ -15,6 +21,12 @@ export default function renderContent() {
     container.innerHTML = `
         ${renderGeneralInfo(d)}
         ${renderLang(d)}
+        ${renderDoc(d)}
+        ${renderCode(d)}
+        ${renderUser(d)}
+        ${renderTutor(d)}
+        ${renderCommuinity(d)}
+        ${renderDistributed(d)}
     `;
     
 }
