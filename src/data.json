@@ -34,6 +34,10 @@
         "distributed": {
             "context":"Tensorflow supports <a href=\"https://www.tensorflow.org/guide/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a> and has a tutorial page about it. It supports different strategies, such as mirrored Strategy, TPU Strategy, multi worker mirrored strategy, central storage strategy, and parameter storage strategy.",
             "link": "<a href=\"https://www.tensorflow.org/guide/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed ML</a>"
+        },
+        "takeaway": {
+            "advantage": "&#9989; Easy to use for beginners <br> &#9989; Easy to find the specific tutorial in the webpage <br> &#9989; Supportive community for developers",
+            "disadvantage": "&#10060; Explanations are hard to follow and need to include graphic models <br> &#10060; Hard to incorporate customized design for neural network models"
         }
     },
     "pytorch":{
@@ -68,8 +72,12 @@
             "link": "<a href=\"https://discuss.pytorch.org/\" class=\"center-underline\" target=\"_blank\">link</a>"
         },
         "distributed":{
-          "context":"PyTorch has a <a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a> for developing distributed ML. The package has three components: distributed data-parallel training, RPC-based distributed training, and collective communication.",
-          "link": "<a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a>"
+            "context":"PyTorch has a <a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a> for developing distributed ML. The package has three components: distributed data-parallel training, RPC-based distributed training, and collective communication.",
+            "link": "<a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a>"
+        },
+        "takeaway": {
+            "advantage": "&#9989; Flexible to design customized neural network model <br> &#9989; Good graphical explanations in the tutorial page",
+            "disadvantage": "&#10060; Harder for beginners to learn <br> &#10060;  The long code section in the tutorial is hard to follow and needs to be separated to smaller sections"
         }
     },
     "mxnet":{
@@ -113,6 +121,10 @@
         "distributed":{
             "context":"MXNet supports <a href=\"https://mxnet.apache.org/versions/1.7.0/api/faq/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a>. Users can launch training jobs on multiple machines to shorten training time. Currently, MXNet supports data parallelism on multiple machines, and supports model parallelism only on a single machine. It provides a key-value store for communication of parameters.",
             "link":"<a href=\"https://mxnet.apache.org/versions/1.7.0/api/faq/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a>"
+        },
+        "takeaway": {
+            "advantage": "&#9989; Clear documentation for the frequently used APIs <br> &#9989; Support for many different programming languages <br> &#9989; Good support for distributed ML",
+            "disadvantage": "&#10060; Relatively low tutorial availability <br> &#10060; Some documentation do not show examples and they can be difficult for beginners to understand"
         }
     }
 }
