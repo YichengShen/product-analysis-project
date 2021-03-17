@@ -5,7 +5,7 @@ export default function rendertakeaway(data) {
                 <div class="row">
                     <div class="col-10 mx-auto">
                         <div class="row gx-6">
-                            <h4>Take Away</h4>
+                            <h4>Takeaways</h4>
                             ${renderEach(data)}
                         </div>
                     </div>
@@ -26,7 +26,11 @@ function renderEach(data) {
 function renderInside(d) {
     if (typeof d !== 'undefined') {
         return `
+            <span class="fw-lighter fst-italic">Pros</span>
+            <br>
             <span>${d.takeaway.advantage}</span>
+            <br>
+            <span class="fw-lighter fst-italic">Cons</span>
             <br>
             <span>${d.takeaway.disadvantage}</span>
         `
