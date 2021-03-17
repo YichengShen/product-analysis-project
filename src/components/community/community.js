@@ -1,6 +1,8 @@
+import '../../custom.css'
+
 export default function renderCommuinity(data) {
     return `
-        <section class="bg-light pt-3 pb-3">
+        <section class="pt-3 pb-3">
             <div class="container">
                 <div class="row">
                     <div class="col-10 mx-auto">
@@ -17,7 +19,7 @@ export default function renderCommuinity(data) {
 
 function renderEach(data) {
     return data.map(d => `
-        <div class="col">
+        <div class="col col-custom">
             ${renderInside(d)}
         </div>
     `).join('');
@@ -26,13 +28,19 @@ function renderEach(data) {
 function renderInside(d) {
     if (typeof d !== 'undefined') {
         return `
-        <span>${d.community.context}</span>
+        ${renderLinks(d.community.list)}
         <br>
-        <span>${d.community.link}</span>
+        <span>${d.community.context}</span>
         `
     } 
     else {
         return ``
     }
 
+}
+
+function renderLinks(links) {
+    return links.map(l => `
+        <li>${l}</li>
+    `).join('');
 }

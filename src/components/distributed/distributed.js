@@ -1,3 +1,5 @@
+import '../../custom.css'
+
 export default function renderDistributed(data) {
     return `
         <section class="bg-light pt-3 pb-3">
@@ -17,7 +19,7 @@ export default function renderDistributed(data) {
 
 function renderEach(data) {
     return data.map(d => `
-        <div class="col">
+        <div class="col col-custom">
             ${renderInside(d)}
         </div>
     `).join('');
@@ -27,8 +29,6 @@ function renderInside(d) {
     if (typeof d !== 'undefined') {
         return `
         <span>${d.distributed.context}</span>
-        <br>
-        <span>${d.distributed.link}</span>
         `
     } 
     else {

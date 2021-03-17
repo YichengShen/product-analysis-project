@@ -94,6 +94,8 @@ function drop(e) {
     e.target.appendChild(draggable);
 
     draggable.setAttribute('draggable', false);
+    draggable.classList.add('after-drop');
+    // draggable.classList.add('img-fluid');
 
     renderReset();
 
@@ -103,6 +105,6 @@ function drop(e) {
 function renderReset() {
     const buttonDiv = document.querySelector("#reset-button") 
     buttonDiv.innerHTML = `
-        <a href="" class="reset center-underline">Reset</a>
+        <a href="" class="reset center-underline">RESET</a>
     `
 }
