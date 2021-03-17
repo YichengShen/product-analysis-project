@@ -1,0 +1,18 @@
+/* code {
+    display: block; 
+    word-break: break-all;
+    white-space: normal; 
+    overflow:scroll;
+} */
+
+pre code {
+    color: rgb(162, 36, 80);
+    overflow-x:scroll;
+    overflow-y: hidden;
+    display: block;
+    line-height: 1.6em;
+    font-size: 11px;
+    white-space: normal; 
+    word-break: break-all;
+    word-wrap: normal;
+}

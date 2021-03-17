@@ -1,3 +1,5 @@
+import './code.css'
+
 export default function renderCode(data) {
     return `
         <section class="bg-light pt-3 pb-3">
@@ -28,7 +30,7 @@ function renderInside(d) {
         return `
             <span>${d.programming.context}</span>
             <br>
-            <code>${d.programming.code}</code>
+            <span><pre><code>${d.programming.code}</code></pre></span>
         `
     } else {
         return `<div class="col"></div>`

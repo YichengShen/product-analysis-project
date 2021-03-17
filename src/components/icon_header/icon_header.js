@@ -8,11 +8,11 @@ import './icon_header.css'
 
 export default function renderIconHeader() {
     return `
-    <div class="container mb-5">
+    <div class="container mb-2">
         <div class="row">
             <div class="col-10 mx-auto">
                 <header class="header-icon">
-                    <h1 class="text-center">Let's Compare the ML Libraries</h1>
+                    <h1 class="text-center">Let's Compare ML Libraries</h1>
                     <p class="text-center">Drag the icons below into the boxes to compare</p>
                     <div class="overflow-hidden">
                     <div class="row gx-1">

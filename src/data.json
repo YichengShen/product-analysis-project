@@ -12,24 +12,28 @@
             "Javascript"
         ],
         "documentation": {
-            "context": "TensorFlow provides good APIs for Python and C++. It documents all of the modules, classes, and functions. The documentation includes many details and examples which help developers to understand how to use the functions. Furthermore, there is also a well-documented TensorFlow.js API. ",
-             "link": "<a href=\"https://www.tensorflow.org/api_docs/python/tf\" class=\"center-underline\" target=\"_blank\">link</a>"},
+            "context": "TensorFlow provides good <a href=\"https://www.tensorflow.org/api_docs/python/tf\" class=\"center-underline\" target=\"_blank\">APIs for Python</a> and C++. It documents all of the modules, classes, and functions. The documentation includes many details and examples which help developers to understand how to use the functions. Furthermore, there is also a well-documented TensorFlow.js API. ",
+             "link": "<a href=\"https://www.tensorflow.org/api_docs/python/tf\" class=\"center-underline\" target=\"_blank\">link</a>"
+        },
         "user": "TensorFlow is widely used in industry. Many companies, such as Airbnb, Google, CocaCola, DeepMind are using TensorFlow to develop projects. ",
         "programming":{
             "context": "TensorFlow supports both the symbolic and imperative ways of creating models. In TensorFlow, a neural network can be built symbolically in the syntax shown in the example below.",
-            "code": "model = tf.keras.models.Sequential([ tf.keras.layers.Flatten(input_shape=(28, 28)), tf.keras.layers.Dense(128, activation='relu'), tf.keras.layers.Dropout(0.2), tf.keras.layers.Dense(10)])"
+            "code": "model = tf.keras.models.Sequential([<br> &nbsp &nbsp tf.keras.layers.Flatten(input_shape=(28, 28)),<br> &nbsp &nbsp tf.keras.layers.Dense(128, activation='relu'),<br> &nbsp &nbsp tf.keras.layers.Dropout(0.2),<br> &nbsp &nbsp tf.keras.layers.Dense(10)])"
         },
         "tutorial": {
-             "context": "Tensorflow has tutorials in videos, blogs and websites. Although they did a good job of segmenting the tutorials in different subject areas, such as Natural Language Processing and Computer Vision, explanations in each section are very abstract. TensorFlow also provided tailored tutorials for expert and beginner users.",
-             "link":  "<a href=\"https://www.tensorflow.org/tutorials\" class=\"center-underline\" target=\"_blank\">link</a>"
+             "context": "Tensorflow has <a href=\"https://www.tensorflow.org/tutorials\" class=\"center-underline\" target=\"_blank\">tutorials</a> in videos, blogs and websites. Although they did a good job of segmenting the tutorials in different subject areas, such as Natural Language Processing and Computer Vision, explanations in each section are very abstract. TensorFlow also provided tailored tutorials for expert and beginner users.",
+             "link":  "<a href=\"https://www.tensorflow.org/tutorials\" class=\"center-underline\" target=\"_blank\">tutorials</a>"
         },
         "community":{
+            "list": [
+                "<a href=\"https://www.tensorflow.org/community/groups\" class=\"center-underline\" target=\"_blank\">Tensorflow Group</a>"
+            ],
             "context":"Tensorflow has a platform called Tensorflow group. Different locations around the world have their own Tensorflow group for people to discuss developing AI with TensorFlow.",
             "link": "<a href=\"https://www.tensorflow.org/community/groups\" class=\"center-underline\" target=\"_blank\">link</a>"
         },
         "distributed": {
-            "context":"Tensorflow supports distributed ML and has a tutorial page about it. It supports different strategies, such as mirrored Strategy, TPU Strategy, multi worker mirrored strategy, central storage strategy, and parameter storage strategy.",
-            "link": "<a href=\"https://www.tensorflow.org/guide/distributed_training\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context":"Tensorflow supports <a href=\"https://www.tensorflow.org/guide/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a> and has a tutorial page about it. It supports different strategies, such as mirrored Strategy, TPU Strategy, multi worker mirrored strategy, central storage strategy, and parameter storage strategy.",
+            "link": "<a href=\"https://www.tensorflow.org/guide/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed ML</a>"
         }
     },
     "pytorch":{
@@ -43,8 +47,8 @@
             "CUDA"
         ],
         "documentation": {
-            "context":"In PyTorch’s documentation, there are different API function calls to build AI models. The mostly used function call is torch.nn, which is the building block for deep neural networks.",
-            "link": "<a href=\"https://pytorch.org/docs/stable/index.html\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context":"In <a href=\"https://pytorch.org/docs/stable/index.html\" class=\"center-underline\" target=\"_blank\">PyTorch’s documentation</a>, there are different API function calls to build AI models. The mostly used function call is torch.nn, which is the building block for deep neural networks.",
+            "link": "<a href=\"https://pytorch.org/docs/stable/index.html\" class=\"center-underline\" target=\"_blank\">PyTorch’s documentation</a>"
         },
         "user":"PyTorch is widely used in research institutions to develop new algorithms in AI given the flexibility it provides to developers. Salesforce, Stanford University, and Udacity are the example user groups of PyTorch.",
         "programming":{
@@ -52,16 +56,20 @@
             "code": "class NN(nn.Module):<br> &nbsp &nbsp def __init__(self):<br> &nbsp &nbsp &nbsp &nbsp super().__init__() <br> &nbsp &nbsp &nbsp &nbsp self.lin = nn.Linear(784, 10) <br> &nbsp &nbsp def forward(self, xb): <br> &nbsp &nbsp &nbsp &nbsp return self.lin(xb)"
         },
         "tutorial": {
-            "context":"PyTorch tutorial is very clear and easy to understand. The tutorial has an overview and detailed illustration about different applications in PyTorch, such as NLP and computer vision. In each tutorial about the specific application, there are some graphical illustrations about the model, which are helpful for readers to understand. However, in the tutorial, they should segment the code more to explain them separately, which can allow users to follow the code better.",
-            "link": "<a href=\"https://pytorch.org/tutorials/\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context":"<a href=\"https://pytorch.org/tutorials/\" class=\"center-underline\" target=\"_blank\">PyTorch tutorials</a> are very clear and easy to understand. The tutorial has an overview and detailed illustration about different applications in PyTorch, such as NLP and computer vision. In each tutorial about the specific application, there are some graphical illustrations about the model, which are helpful for readers to understand. However, in the tutorial, they should segment the code more to explain them separately, which can allow users to follow the code better.",
+            "link": "<a href=\"https://pytorch.org/tutorials/\" class=\"center-underline\" target=\"_blank\">PyTorch tutorials</a>"
         },
         "community": {
+            "list": [
+                "<a href=\"https://discuss.pytorch.org/\" class=\"center-underline\" target=\"_blank\">PyTorch Forum</a>",
+                "<a href=\"https://pytorch.org/blog/\" class=\"center-underline\" target=\"_blank\">PyTorch Blog</a>"
+            ],
             "context":"PyTorch Forum is a widely used platform for developers. They ask questions about how to solve issues when developing the projects and discuss some ideas about future projects. PyTorch blog has updated information about the development of PyTorch.",
             "link": "<a href=\"https://discuss.pytorch.org/\" class=\"center-underline\" target=\"_blank\">link</a>"
         },
         "distributed":{
-          "context":"PyTorch has a torch.distribute package for developing distributed ML. The package has three components: distributed data-parallel training, RPC-based distributed training, and collective communication.",
-          "link": "<a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">link</a>"
+          "context":"PyTorch has a <a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a> for developing distributed ML. The package has three components: distributed data-parallel training, RPC-based distributed training, and collective communication.",
+          "link": "<a href=\"https://pytorch.org/tutorials/beginner/dist_overview.html#\" class=\"center-underline\" target=\"_blank\">torch.distribute package</a>"
         }
     },
     "mxnet":{
@@ -82,8 +90,8 @@
             "Clojure"
         ],
         "documentation": {
-            "context": "Currently, MXNet provides a good Python API for developers. Its Gluon API is clear and simple for building ML models. The documentation for Python API is relatively comprehensive and easy to read. The frequently used functions are documented with examples. However, documentations for other programming languages are not as comprehensive.",
-            "link": "<a href=\"https://mxnet.apache.org/versions/1.7.0/api\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context": "Currently, MXNet provides a good <a href=\"https://mxnet.apache.org/versions/1.7.0/api\" class=\"center-underline\" target=\"_blank\">Python API</a> for developers. Its Gluon API is clear and simple for building ML models. The documentation for Python API is relatively comprehensive and easy to read. The frequently used functions are documented with examples. However, documentations for other programming languages are not as comprehensive.",
+            "link": "<a href=\"https://mxnet.apache.org/versions/1.7.0/api\" class=\"center-underline\" target=\"_blank\">Python API</a>"
         },
         "programming":{
             "context": "MXNet provides a NumPy-like programming interface. Developers who know NumPy can quickly learn to use MXNet. Its automatic hybridization also allows developers to program imperatively, but the performance is close to traditional symbolic programming. A neural network is created using the syntax shown in the example below.",
@@ -91,16 +99,20 @@
         },
         "user":"MXNet is mainly used by many large companies in the industry. It is used as part of larger analytics suites, like Wolfram. It is also used by Amazon for image analysis. Furthermore, some Apple devices use its deep learning models. In the research field, it also had some usages because of its scalability and support for GPU.",
         "tutorial":{
-            "context":"MXNet provides some tutorials of the main usages of the framework. The tutorials are enough for developers to get started. In order to understand more details, developers need to read the documentation. On the Internet, there are a small number of tutorials provided by MXNet users, but tutorials are expected to become more available in the future.",
-            "link": "<a href=\"https://mxnet.apache.org/versions/1.7.0/api/python/docs/tutorials/\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context":"MXNet provides some <a href=\"https://mxnet.apache.org/versions/1.7.0/api/python/docs/tutorials/\" class=\"center-underline\" target=\"_blank\">tutorials</a> of the main usages of the framework. The tutorials are enough for developers to get started. In order to understand more details, developers need to read the documentation. On the Internet, there are a small number of tutorials provided by MXNet users, but tutorials are expected to become more available in the future.",
+            "link": "<a href=\"https://mxnet.apache.org/versions/1.7.0/api/python/docs/tutorials/\" class=\"center-underline\" target=\"_blank\">tutorials</a>"
         },
         "community":{
+            "list":[
+                "<a href=\"https://discuss.mxnet.apache.org\" class=\"center-underline\" target=\"_blank\">MXNet Discuss Forum</a>",
+                "<a href=\"https://github.com/apache/incubator-mxnet\" class=\"center-underline\" target=\"_blank\">MXNet Github</a>"
+            ],
             "context":"MXNet has a forum for discussions related to ML and the Gluon API. Developers can also report bugs, request features, and discuss issues on the GitHub repository of MXNet. Furthermore, there is a slack workspace for discussions of advanced topics, but requests for access require permission.",
             "link":"<a href=\"https://discuss.mxnet.apache.org\" class=\"center-underline\" target=\"_blank\">link</a>"
         },
         "distributed":{
-            "context":"MXNet supports distributed training. Users can launch training jobs on multiple machines to shorten training time. Currently, MXNet supports data parallelism on multiple machines, and supports model parallelism only on a single machine. It provides a key-value store for communication of parameters.",
-            "link":"<a href=\"https://mxnet.apache.org/versions/1.7.0/api/faq/distributed_training\" class=\"center-underline\" target=\"_blank\">link</a>"
+            "context":"MXNet supports <a href=\"https://mxnet.apache.org/versions/1.7.0/api/faq/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a>. Users can launch training jobs on multiple machines to shorten training time. Currently, MXNet supports data parallelism on multiple machines, and supports model parallelism only on a single machine. It provides a key-value store for communication of parameters.",
+            "link":"<a href=\"https://mxnet.apache.org/versions/1.7.0/api/faq/distributed_training\" class=\"center-underline\" target=\"_blank\">distributed training</a>"
         }
     }
 }

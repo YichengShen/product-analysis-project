@@ -1,3 +1,5 @@
+import '../../custom.css'
+
 export default function renderTutor(data) {
     return `
         <section class="bg-light pt-3 pb-3">
@@ -17,7 +19,7 @@ export default function renderTutor(data) {
 
 function renderEach(data) {
     return data.map(d => `
-        <div class="col">
+        <div class="col col-custom">
             ${renderInside(d)}
         </div>
     `).join('');
@@ -27,8 +29,6 @@ function renderInside(d) {
     if (typeof d !== 'undefined') {
         return `
         <span>${d.tutorial.context}</span>
-        <br>
-        <span>${d.tutorial.link}</span>
         `
     } 
     else {
