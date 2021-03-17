@@ -9,6 +9,7 @@ import renderUser from '../user/u.js';
 import renderCommuinity from '../community/community.js';
 import renderTutor from '../tutorial/tutorial.js';
 import renderDistributed from '../distributed/distributed.js';
+import rendertakeaway from '../takeaway/takeaway';
 
 export default function renderContent() {
     const [one, two, three] = getProductOrder();
@@ -27,6 +28,7 @@ export default function renderContent() {
         ${renderTutor(d)}
         ${renderCommuinity(d)}
         ${renderDistributed(d)}
+        ${rendertakeaway(d)}
     `;
     
 }
